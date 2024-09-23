@@ -10,6 +10,9 @@ public class Zombie extends Enemy {
     @Override
     public void attack(aCharacter hero) {
         hero.takeDamage(5);
-        System.out.println("Zombie bit a hero");
+        System.out.println("Zombie bit hero");
+    }
+    public void resurrect(int health) {
+        this.health = health;
     }
 }
